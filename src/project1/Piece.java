@@ -5,7 +5,8 @@ import java.util.List;
 
 import apple.laf.JRSUIConstants.Direction;
 import project1.Maze;
-import project1.Direction.*;
+import static project1.Direction.*;
+//import project1.Direction.*;
 
 public class Piece {
 	private final Maze maze;
@@ -18,7 +19,7 @@ public class Piece {
 		location = maze.getStartLocation();
 	}
 
-	public void turnLeft() { direction = direction.ordinal(); }
+	public void turnLeft() { direction = direction.NORTH.NORTH; }
 
 	public void turnRight() { direction = direction.right(); }
 
